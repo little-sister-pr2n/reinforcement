@@ -1,0 +1,21 @@
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	pfrl_test.py
+	results/
+	results_seed=0_env=Ant-v1_agent=TD3/
+	results_seed=0_env=Ant-v2_agent=TD3/
+	results_seed=0_env=BipedalWalker-v3_agent=TD3/
+	results_seed=0_env=HalfCheetah-v2_agent=TD3/
+	results_seed=0_env=Walker2d-v1_agent=TD3/
+	results_seed=0_env=Walker2d-v2_agent=TD3/
+	results_seed=1_env=BipedalWalker-v3_agent=TD3/
+	results_seed=2_env=BipedalWalker-v3_agent=TD3/
+	results_seed=2_env=HalfCheetah-v1_agent=TD3/
+	results_seed=3_env=BipedalWalker-v3_agent=TD3/
+	test_for_pfrl.py
+
+nothing added to commit but untracked files present (use "git add" to track)

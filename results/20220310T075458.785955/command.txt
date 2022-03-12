@@ -1,0 +1,1 @@
+test_for_pfrl.py --env BipedalWalker-v3 --render
