@@ -1,0 +1,27 @@
+diff --git a/results/0_except/policy.pt b/results/0_except/policy.pt
+index e9f9144..128ef15 100644
+Binary files a/results/0_except/policy.pt and b/results/0_except/policy.pt differ
+diff --git a/results/0_except/policy_optimizer.pt b/results/0_except/policy_optimizer.pt
+index 678348f..0999d5c 100644
+Binary files a/results/0_except/policy_optimizer.pt and b/results/0_except/policy_optimizer.pt differ
+diff --git a/results/0_except/q_func1.pt b/results/0_except/q_func1.pt
+index e96a445..b36c391 100644
+Binary files a/results/0_except/q_func1.pt and b/results/0_except/q_func1.pt differ
+diff --git a/results/0_except/q_func1_optimizer.pt b/results/0_except/q_func1_optimizer.pt
+index 99e9cc2..9befb2d 100644
+Binary files a/results/0_except/q_func1_optimizer.pt and b/results/0_except/q_func1_optimizer.pt differ
+diff --git a/results/0_except/q_func2.pt b/results/0_except/q_func2.pt
+index 0e547b8..67270d4 100644
+Binary files a/results/0_except/q_func2.pt and b/results/0_except/q_func2.pt differ
+diff --git a/results/0_except/q_func2_optimizer.pt b/results/0_except/q_func2_optimizer.pt
+index 99e9cc2..69f4363 100644
+Binary files a/results/0_except/q_func2_optimizer.pt and b/results/0_except/q_func2_optimizer.pt differ
+diff --git a/results/0_except/target_policy.pt b/results/0_except/target_policy.pt
+index d3e0c10..a72442f 100644
+Binary files a/results/0_except/target_policy.pt and b/results/0_except/target_policy.pt differ
+diff --git a/results/0_except/target_q_func1.pt b/results/0_except/target_q_func1.pt
+index f47a7ff..572f9c3 100644
+Binary files a/results/0_except/target_q_func1.pt and b/results/0_except/target_q_func1.pt differ
+diff --git a/results/0_except/target_q_func2.pt b/results/0_except/target_q_func2.pt
+index ee8a936..a19ae0a 100644
+Binary files a/results/0_except/target_q_func2.pt and b/results/0_except/target_q_func2.pt differ

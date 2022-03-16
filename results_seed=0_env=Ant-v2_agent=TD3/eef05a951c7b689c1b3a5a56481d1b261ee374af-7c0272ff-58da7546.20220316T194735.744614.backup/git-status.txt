@@ -1,0 +1,24 @@
+ブランチ main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   results/0_except/policy.pt
+	modified:   results/0_except/policy_optimizer.pt
+	modified:   results/0_except/q_func1.pt
+	modified:   results/0_except/q_func1_optimizer.pt
+	modified:   results/0_except/q_func2.pt
+	modified:   results/0_except/q_func2_optimizer.pt
+	modified:   results/0_except/target_policy.pt
+	modified:   results/0_except/target_q_func1.pt
+	modified:   results/0_except/target_q_func2.pt
+
+追跡されていないファイル:
+  (use "git add <file>..." to include in what will be committed)
+	results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-58da7546.20220316T194725.982009.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-58da7546/
+	results_seed=0_env=Pendulum-v1_agent=TD3/
+	results_seed=0_env=a_agent=TD3/
+
+no changes added to commit (use "git add" and/or "git commit -a")
