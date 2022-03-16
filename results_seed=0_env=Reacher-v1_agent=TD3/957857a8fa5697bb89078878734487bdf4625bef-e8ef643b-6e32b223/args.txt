@@ -1,0 +1,1 @@
+{"agent": "TD3", "outdir": "results_seed=0_env=Reacher-v1_agent=TD3", "env": "Reacher-v1", "seed": 0, "gpu": 0, "load": "", "steps": 250000.0, "eval_n_runs": 10, "eval_interval": 5000, "replay_start_size": 2500.0, "batch_size": 256, "render": false, "demo": false, "load_pretrained": false, "pretrained_type": "best", "monitor": false, "log_level": 20}

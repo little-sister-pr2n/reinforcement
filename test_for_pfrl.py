@@ -238,7 +238,7 @@ def main():
     plt.fill_between(df["steps"], df["mean"]-df["stdev"], df["mean"]+df["stdev"], alpha=0.3)
     plt.xlabel("steps")
     plt.ylabel("cumulative rewards")
-    plt.show()
+    # plt.show()
     plt.savefig(f"{args.outdir}/figure.pdf")
     
    

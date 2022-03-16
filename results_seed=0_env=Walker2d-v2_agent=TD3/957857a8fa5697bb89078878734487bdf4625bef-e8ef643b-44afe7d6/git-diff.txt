@@ -1,0 +1,13 @@
+diff --git a/test_for_pfrl.py b/test_for_pfrl.py
+index b8c39e0..8d2bfcd 100644
+--- a/test_for_pfrl.py
++++ b/test_for_pfrl.py
+@@ -238,7 +238,7 @@ def main():
+     plt.fill_between(df["steps"], df["mean"]-df["stdev"], df["mean"]+df["stdev"], alpha=0.3)
+     plt.xlabel("steps")
+     plt.ylabel("cumulative rewards")
+-    plt.show()
++    # plt.show()
+     plt.savefig(f"{args.outdir}/figure.pdf")
+     
+    

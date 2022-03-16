@@ -1,0 +1,15 @@
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T134525.373183.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T134615.726183.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T134714.368746.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T135348.318747.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T135402.561502.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T154920.207648.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546/
+
+nothing added to commit but untracked files present (use "git add" to track)

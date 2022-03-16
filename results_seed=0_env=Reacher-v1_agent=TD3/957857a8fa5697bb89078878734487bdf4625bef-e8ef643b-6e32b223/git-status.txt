@@ -1,0 +1,27 @@
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   test_for_pfrl.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T134525.373183.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T134615.726183.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T134714.368746.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T135348.318747.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T135402.561502.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T154920.207648.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546.20220312T163230.740807.backup/
+	results_seed=0_env=Ant-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-00000000-58da7546/
+	results_seed=0_env=InvertedDoublePendulum-v1_agent=TD3/
+	results_seed=0_env=InvertedDoublePendulum-v2_agent=TD3/
+	results_seed=0_env=Reacher-v1_agent=TD3/
+	results_seed=0_env=Walker2d-v1_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-e8ef643b-030f9d06/
+	results_seed=0_env=Walker2d-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-e8ef643b-44afe7d6.20220315T200404.818441.backup/
+	results_seed=0_env=Walker2d-v2_agent=TD3/957857a8fa5697bb89078878734487bdf4625bef-e8ef643b-44afe7d6/
+
+no changes added to commit (use "git add" and/or "git commit -a")
