@@ -1,4 +1,5 @@
 import argparse
+from concurrent.futures import process
 import logging
 import sys
 
@@ -87,7 +88,14 @@ def main():
 
     logging.basicConfig(level=args.log_level)
 
-    args.outdir = f"{args.outdir}_seed={int(args.seed)}_env={args.env}_agent={args.agent}"
+    env = make_env(test=False)
+    timestep_limit = env.spec.max_episode_steps
+    obs_space = env.observation_space
+    action_space = env.action_space
+    print("Observation space:", obs_space)
+    print("Action space:", action_space)
+    args.outdir = f"./results/{args.env}/{args.agent}/{int(args.seed):03}"
+    # args.outdir = f"{args.outdir}_seed={int(args.seed)}_env={args.env}_agent={args.agent}"
     args.outdir = experiments.prepare_output_dir(args, args.outdir, argv=sys.argv)
     print("Output files are saved in {}".format(args.outdir))
 
@@ -111,12 +119,7 @@ def main():
             env = pfrl.wrappers.Render(env)
         return env
 
-    env = make_env(test=False)
-    timestep_limit = env.spec.max_episode_steps
-    obs_space = env.observation_space
-    action_space = env.action_space
-    print("Observation space:", obs_space)
-    print("Action space:", action_space)
+    
 
     obs_size = obs_space.low.size
     action_size = action_space.low.size

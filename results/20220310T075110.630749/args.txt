@@ -1,1 +1,0 @@
-{"outdir": "results", "env": "Hopper-v2", "seed": 0, "gpu": 0, "load": "", "steps": 1000000, "eval_n_runs": 10, "eval_interval": 5000, "replay_start_size": 10000, "batch_size": 100, "render": false, "demo": false, "load_pretrained": false, "pretrained_type": "best", "monitor": false, "log_level": 20}
