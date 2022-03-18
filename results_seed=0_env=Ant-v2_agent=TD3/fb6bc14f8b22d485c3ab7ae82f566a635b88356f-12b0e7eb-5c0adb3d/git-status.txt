@@ -1,0 +1,22 @@
+ブランチ main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/policy.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/policy_optimizer.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/q_func1.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/q_func1_optimizer.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/q_func2.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/q_func2_optimizer.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/target_policy.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/target_q_func1.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/best/target_q_func2.pt
+	modified:   results_seed=0_env=Ant-v2_agent=TD3/eef05a951c7b689c1b3a5a56481d1b261ee374af-7c0272ff-a757fd59/scores.txt
+
+追跡されていないファイル:
+  (use "git add <file>..." to include in what will be committed)
+	results_seed=0_env=Ant-v2_agent=TD3/fb6bc14f8b22d485c3ab7ae82f566a635b88356f-12b0e7eb-5c0adb3d/
+
+no changes added to commit (use "git add" and/or "git commit -a")
