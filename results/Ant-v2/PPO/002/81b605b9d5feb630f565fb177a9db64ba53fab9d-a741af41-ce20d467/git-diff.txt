@@ -1,0 +1,7 @@
+diff --git a/manage.csv b/manage.csv
+index 22be578..32a60d6 100644
+--- a/manage.csv
++++ b/manage.csv
+@@ -1 +1,2 @@
+ env,agent,seed,steps
++HalfCheetah-v2,HalfCheetah-v2,4,1000000
