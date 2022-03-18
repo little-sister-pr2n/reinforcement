@@ -122,75 +122,114 @@ def main():
     # Set a random seed used in PFRL
     utils.set_random_seed(args.seed)
 
-
     obs_size = obs_space.low.size
     action_size = action_space.low.size
-
-    policy = nn.Sequential(
-        nn.Linear(obs_size, 400),
-        nn.ReLU(),
-        nn.Linear(400, 300),
-        nn.ReLU(),
-        nn.Linear(300, action_size),
-        nn.Tanh(),
-        pfrl.policies.DeterministicHead(),
-    )
-    policy_optimizer = torch.optim.Adam(policy.parameters())
-
-    def make_q_func_with_optimizer():
-        q_func = nn.Sequential(
-            pfrl.nn.ConcatObsAndAction(),
-            nn.Linear(obs_size + action_size, 400),
-            nn.ReLU(),
-            nn.Linear(400, 300),
-            nn.ReLU(),
-            nn.Linear(300, 1),
-        )
-        q_func_optimizer = torch.optim.Adam(q_func.parameters())
-        return q_func, q_func_optimizer
-
-    q_func1, q_func1_optimizer = make_q_func_with_optimizer()
-    q_func2, q_func2_optimizer = make_q_func_with_optimizer()
-
-    rbuf = replay_buffers.ReplayBuffer(10 ** 6)
-
-    explorer = explorers.AdditiveGaussian(
-        scale=0.1, low=action_space.low, high=action_space.high
-    )
 
     def burnin_action_func():
         """Select random actions until model is updated one or more times."""
         return np.random.uniform(action_space.low, action_space.high).astype(np.float32)
 
     # Hyperparameters in http://arxiv.org/abs/1802.09477
-    agent = pfrl.agents.TD3(
-        policy,
-        q_func1,
-        q_func2,
-        policy_optimizer,
-        q_func1_optimizer,
-        q_func2_optimizer,
-        rbuf,
-        gamma=0.99,
-        soft_update_tau=5e-3,
-        explorer=explorer,
-        replay_start_size=args.replay_start_size,
-        gpu=args.gpu,
-        minibatch_size=args.batch_size,
-        burnin_action_func=burnin_action_func,
-    )
-
-    if len(args.load) > 0 or args.load_pretrained:
-        # either load or load_pretrained must be false
-        assert not len(args.load) > 0 or not args.load_pretrained
-        if len(args.load) > 0:
-            agent.load(args.load)
-        else:
-            agent.load(
-                utils.download_model("TD3", args.env, model_type=args.pretrained_type)[
-                    0
-                ]
+    if args.agent == "TD3":
+        rbuf = replay_buffers.ReplayBuffer(10 ** 6)
+        policy = nn.Sequential(
+            nn.Linear(obs_size, 400),
+            nn.ReLU(),
+            nn.Linear(400, 300),
+            nn.ReLU(),
+            nn.Linear(300, action_size),
+            nn.Tanh(),
+            pfrl.policies.DeterministicHead(),
+        )
+        policy_optimizer = torch.optim.Adam(policy.parameters())
+        def make_q_func_with_optimizer():
+            q_func = nn.Sequential(
+                pfrl.nn.ConcatObsAndAction(),
+                nn.Linear(obs_size + action_size, 400),
+                nn.ReLU(),
+                nn.Linear(400, 300),
+                nn.ReLU(),
+                nn.Linear(300, 1),
             )
+            q_func_optimizer = torch.optim.Adam(q_func.parameters())
+            return q_func, q_func_optimizer
+
+        q_func1, q_func1_optimizer = make_q_func_with_optimizer()
+        q_func2, q_func2_optimizer = make_q_func_with_optimizer()
+
+        explorer = explorers.AdditiveGaussian(
+            scale=0.1, low=action_space.low, high=action_space.high
+        )
+        agent = pfrl.agents.TD3(
+            policy,
+            q_func1,
+            q_func2,
+            policy_optimizer,
+            q_func1_optimizer,
+            q_func2_optimizer,
+            rbuf,
+            gamma=0.99,
+            soft_update_tau=5e-3,
+            explorer=explorer,
+            replay_start_size=args.replay_start_size,
+            gpu=args.gpu,
+            minibatch_size=args.batch_size,
+            burnin_action_func=burnin_action_func,
+        )
+    elif args.agent == "PPO":
+        policy = torch.nn.Sequential(
+            nn.Linear(obs_size, 64),
+            nn.Tanh(),
+            nn.Linear(64, 64),
+            nn.Tanh(),
+            nn.Linear(64, action_size),
+            pfrl.policies.GaussianHeadWithStateIndependentCovariance(
+                action_size=action_size,
+                var_type="diagonal",
+                var_func=lambda x: torch.exp(2 * x),  # Parameterize log std
+                var_param_init=0,  # log std = 0 => std = 1
+            ),
+        )
+
+        vf = torch.nn.Sequential(
+            nn.Linear(obs_size, 64),
+            nn.Tanh(),
+            nn.Linear(64, 64),
+            nn.Tanh(),
+            nn.Linear(64, 1),
+        )
+
+        obs_normalizer = pfrl.nn.EmpiricalNormalization(
+            obs_space.low.size, clip_threshold=5
+        )
+
+        def ortho_init(layer, gain):
+            nn.init.orthogonal_(layer.weight, gain=gain)
+            nn.init.zeros_(layer.bias)
+
+        ortho_init(policy[0], gain=1)
+        ortho_init(policy[2], gain=1)
+        ortho_init(policy[4], gain=1e-2)
+        ortho_init(vf[0], gain=1)
+        ortho_init(vf[2], gain=1)
+        ortho_init(vf[4], gain=1)
+    
+        model = pfrl.nn.Branched(policy, vf)
+        opt = torch.optim.Adam(model.parameters(), lr=3e-4, eps=1e-5)
+        agent = pfrl.agents.PPO(
+            model,
+            opt,
+            obs_normalizer=obs_normalizer,
+            gpu=args.gpu,
+            update_interval=args.update_interval,
+            minibatch_size=args.batch_size,
+            epochs=args.epochs,
+            clip_eps_vf=None,
+            entropy_coef=0,
+            standardize_advantages=True,
+            gamma=0.995,
+            lambd=0.97,
+        )
 
     eval_env = make_env(test=True)
     if args.demo:
