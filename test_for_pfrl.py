@@ -84,6 +84,19 @@ def main():
     parser.add_argument(
         "--log-level", type=int, default=logging.INFO, help="Level of the root logger."
     )
+    # for PPO
+    parser.add_argument(
+        "--update-interval",
+        type=int,
+        default=2048,
+        help="Interval in timesteps between model updates.",
+    )
+    parser.add_argument(
+        "--epochs",
+        type=int,
+        default=10,
+        help="Number of epochs to update model for per PPO iteration.",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(level=args.log_level)
