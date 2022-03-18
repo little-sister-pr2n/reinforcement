@@ -1,0 +1,1 @@
+{"agent": "TD3", "outdir": "./results/Ant-v2/TD3/003", "env": "Ant-v2", "seed": 3, "gpu": -1, "load": "", "steps": 1000000, "eval_n_runs": 10, "eval_interval": 5000, "replay_start_size": 2500.0, "batch_size": 256, "render": false, "demo": false, "load_pretrained": false, "pretrained_type": "best", "monitor": false, "log_level": 20, "update_interval": 2048, "epochs": 10}

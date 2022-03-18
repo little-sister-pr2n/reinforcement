@@ -1,0 +1,57 @@
+commit ce52a07d6821eb4fe195a66cb8386ba45a0bf1db
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 11:24:25 2022 +0900
+
+    fixed ppo experiments
+
+commit e0e209719ff79aa62100296362618e53f524dbe8
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 11:21:40 2022 +0900
+
+    added PPO algorithm to experiments program
+
+commit 6d7a543f345b17e2edb22e38ce6dc1ea64f27079
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 11:12:49 2022 +0900
+
+    2 experiments has done with td3 agent
+
+commit 06cc05197b96f08312e69124d32f93cab9262c8a
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 20:48:15 2022 +0900
+
+    a
+
+commit e10cbfe78b2dc6c365fcbe6da1802ee93ad6a15e
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 20:44:26 2022 +0900
+
+    a
+
+commit fb6bc14f8b22d485c3ab7ae82f566a635b88356f
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 20:17:30 2022 +0900
+
+    test
+
+commit eef05a951c7b689c1b3a5a56481d1b261ee374af
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 17:46:10 2022 +0900
+
+    a
+
+commit 957857a8fa5697bb89078878734487bdf4625bef
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sat Mar 12 12:22:43 2022 +0900
+
+    TD3
+    
+    td3の数値実験を行ったが，Antなどmujocoの環境を使えないことに気づいて途方に暮れている
+
+commit 605e3b4c67ac5ed7b171d29d55c2e6874540a29c
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Tue Mar 8 08:29:00 2022 +0900
+
+    a
+    
+    新規追加
