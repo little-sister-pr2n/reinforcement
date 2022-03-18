@@ -1,4 +1,5 @@
 import argparse
+from asyncore import write
 from concurrent.futures import process
 import logging
 import sys
@@ -288,6 +289,9 @@ def main():
             outdir=args.outdir,
             train_max_episode_len=timestep_limit,
         )
+    with open("./manage.csv", mode="a") as f:
+        f.write(f"{args.env},{args.env},{int(args.seed)},{int(args.steps)}\n")
+
     import pandas as pd
     import matplotlib.pyplot as plt
     df = pd.read_table(f"{args.outdir}/scores.txt")
