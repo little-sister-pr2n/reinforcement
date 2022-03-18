@@ -290,7 +290,7 @@ def main():
             train_max_episode_len=timestep_limit,
         )
     with open("./manage.csv", mode="a") as f:
-        f.write(f"{args.env},{args.env},{int(args.seed)},{int(args.steps)}\n")
+        f.write(f"{args.env},{args.agent},{int(args.seed)},{int(args.steps)}\n")
 
     import pandas as pd
     import matplotlib.pyplot as plt
