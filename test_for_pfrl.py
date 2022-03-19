@@ -1,6 +1,4 @@
 import argparse
-from asyncore import write
-from concurrent.futures import process
 import logging
 import sys
 
@@ -133,7 +131,6 @@ def main():
     print("Observation space:", obs_space)
     print("Action space:", action_space)
     args.outdir = f"./results/{args.env}/{args.agent}/{int(args.seed):03}"
-    # args.outdir = f"{args.outdir}_seed={int(args.seed)}_env={args.env}_agent={args.agent}"
     args.outdir = experiments.prepare_output_dir(args, args.outdir, argv=sys.argv)
     print("Output files are saved in {}".format(args.outdir))
 
@@ -150,7 +147,6 @@ def main():
         """Select random actions until model is updated one or more times."""
         return np.random.uniform(action_space.low, action_space.high).astype(np.float32)
 
-    # Hyperparameters in http://arxiv.org/abs/1802.09477
     if args.agent == "TD3":
         rbuf = replay_buffers.ReplayBuffer(10 ** 6)
         policy = nn.Sequential(
@@ -317,7 +313,7 @@ def main():
             temperature_optimizer_lr=3e-4,
         )
     eval_env = make_env(test=True)
-    if args.demo:
+    if args.demo: # こっちは使わない
         eval_stats = experiments.eval_performance(
             env=eval_env,
             agent=agent,
@@ -339,16 +335,6 @@ def main():
         with open(os.path.join(args.outdir, "demo_scores.json"), "w") as f:
             json.dump(eval_stats, f)
     else:
-        """
-        experiments.train_agent_batch(
-            agent=agent,
-            env=env,
-            steps=args.steps,
-            outdir=args.outdir,
-            checkpoint_freq=int(int(args.steps)/20),
-            train_max_episode_len=
-        )
-        """
         experiments.train_agent_with_evaluation(
             agent=agent,
             env=env,
@@ -370,7 +356,6 @@ def main():
     plt.fill_between(df["steps"], df["mean"]-df["stdev"], df["mean"]+df["stdev"], alpha=0.3)
     plt.xlabel("steps")
     plt.ylabel("cumulative rewards")
-    # plt.show()
     plt.savefig(f"{args.outdir}/figure.pdf")
     
    
