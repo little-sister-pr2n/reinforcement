@@ -1,0 +1,20 @@
+ブランチ main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   manage.csv
+	modified:   test.sh
+	modified:   test_for_pfrl.py
+
+追跡されていないファイル:
+  (use "git add <file>..." to include in what will be committed)
+	results/Ant-v2/SAC/001/
+	results/Ant-v2/TD3/001/
+	results/Ant-v2/TD3/002/
+	results/HalfCheetah-v2/SAC/
+	results/HalfCheetah-v2/TD3/000/90185a1970b34ad841cc11559dc5b607462310a3-841e0ad5-e11040f4/
+	results/HalfCheetah-v2/TD3/005/
+
+no changes added to commit (use "git add" and/or "git commit -a")

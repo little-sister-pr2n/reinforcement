@@ -1,0 +1,50 @@
+diff --git a/manage.csv b/manage.csv
+index 5de9393..b7b1187 100644
+--- a/manage.csv
++++ b/manage.csv
+@@ -19,3 +19,6 @@ Ant-v2,PPO,4,1000000
+ Ant-v2,SAC,0,1000000
+ Ant-v2,TD3,0,1000000
+ HalfCheetah-v2,TD3,4,1000000
++HalfCheetah-v2,SAC,0,1000000
++Ant-v2,TD3,1,1000000
++Ant-v2,SAC,1,1000000
+diff --git a/test.sh b/test.sh
+old mode 100644
+new mode 100755
+index 2bc9610..b4512cb
+--- a/test.sh
++++ b/test.sh
+@@ -1,6 +1,6 @@
+ #!/bin/sh
+ 
+-for var in 0 1 2 3 4  #範囲の書き方(Bash独自) => {0..4}
++for var in 1 2 3 4  #範囲の書き方(Bash独自) => {0..4}
+ do
+-    python hw.py
+-done
+\ No newline at end of file
++    python test_for_pfrl.py --steps 1000000 --seed $var --env Ant-v2 --agent SAC --gpu -1
++done
+diff --git a/test_for_pfrl.py b/test_for_pfrl.py
+index 95aa05c..47f4186 100644
+--- a/test_for_pfrl.py
++++ b/test_for_pfrl.py
+@@ -137,8 +137,8 @@ def main():
+     args.outdir = experiments.prepare_output_dir(args, args.outdir, argv=sys.argv)
+     print("Output files are saved in {}".format(args.outdir))
+ 
+-    env.seed(int(args.seed))
+-    torch.manual_seed(int(args.seed))
++    # env.seed(int(args.seed)) make_env内で既にシード値が固定されているため不要
++    torch.manual_seed(int(args.seed)) # torchの乱数シード
+ 
+     # Set a random seed used in PFRL
+     utils.set_random_seed(args.seed)
+@@ -376,4 +376,4 @@ def main():
+    
+ 
+ if __name__ == "__main__":
+-    main()
+\ No newline at end of file
++    main()
