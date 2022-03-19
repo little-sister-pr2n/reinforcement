@@ -1,0 +1,1 @@
+test_for_pfrl.py --steps 1000000 --seed 0 --env HalfCheetah-v2 --agent TD3 --gpu -1

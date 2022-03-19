@@ -134,8 +134,8 @@ def main():
     args.outdir = experiments.prepare_output_dir(args, args.outdir, argv=sys.argv)
     print("Output files are saved in {}".format(args.outdir))
 
-    env.seed(int(args.seed))
-    torch.manual_seed(int(args.seed))
+    # env.seed(int(args.seed)) make_env内で既にシード値が固定されているため不要
+    torch.manual_seed(int(args.seed)) # torchの乱数シード
 
     # Set a random seed used in PFRL
     utils.set_random_seed(args.seed)
