@@ -5,3 +5,6 @@ Ant-v2,Ant-v2,3,1000000
 Ant-v2,Ant-v2,4,1000000
 HalfCheetah-v2,HalfCheetah-v2,2,1000000
 HalfCheetah-v2,HalfCheetah-v2,3,1000000
+Ant-v2,SAC,0,1000000
+Ant-v2,TD3,0,1000000
+HalfCheetah-v2,TD3,4,1000000
