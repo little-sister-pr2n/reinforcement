@@ -1,0 +1,50 @@
+ブランチ main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   manage.csv
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy_optimizer.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1_optimizer.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2_optimizer.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func1.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func2.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_holder.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_optimizer.pt
+	modified:   results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/scores.txt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/policy.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/policy_optimizer.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/q_func1.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/q_func1_optimizer.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/q_func2.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/q_func2_optimizer.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/target_policy.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/target_q_func1.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/best/target_q_func2.pt
+	modified:   results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/scores.txt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/policy.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/policy_optimizer.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/q_func1.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/q_func1_optimizer.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/q_func2.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/q_func2_optimizer.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/target_q_func1.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/target_q_func2.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/temperature_holder.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/best/temperature_optimizer.pt
+	modified:   results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/scores.txt
+
+追跡されていないファイル:
+  (use "git add <file>..." to include in what will be committed)
+	results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/1000000_finish/
+	results/Ant-v2/TD3/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9889d533-782daba6/figure.pdf
+	results/Ant-v2/TD3/004/
+	results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/1000000_finish/
+	results/HalfCheetah-v2/SAC/002/10eaacb62acf7cca7434a933e8c878fc8e513e49-ea5fcd25-0776e6b5/figure.pdf
+	results/HalfCheetah-v2/SAC/003/
+
+no changes added to commit (use "git add" and/or "git commit -a")

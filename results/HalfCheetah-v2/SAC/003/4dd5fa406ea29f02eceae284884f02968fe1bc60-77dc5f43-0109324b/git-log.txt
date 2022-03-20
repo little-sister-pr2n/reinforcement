@@ -1,0 +1,193 @@
+commit 4dd5fa406ea29f02eceae284884f02968fe1bc60
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 18:44:15 2022 +0900
+
+    delete unnecessary directories and files
+
+commit f77133126659822a8f4daf2e1d2cbc163f9e8469
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 18:41:31 2022 +0900
+
+    a
+
+commit 4dc6c4228686e806366ab4748ca7c404c5891061
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 18:34:11 2022 +0900
+
+    a
+
+commit 10eaacb62acf7cca7434a933e8c878fc8e513e49
+Merge: e0952b0 ad3a582
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 07:43:33 2022 +0900
+
+    Merge branch 'main' of https://github.com/little-sister-pr2n/reinforcement into main
+
+commit e0952b0175f47f794c0881d040f7ca02aa73803a
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 07:43:01 2022 +0900
+
+    a
+
+commit ad3a582abfccc09b39566372acdf8121d94cdc44
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 07:01:06 2022 +0900
+
+    delete unnecessary directory
+
+commit 9a8673dfecfbcc4ce17a4b800570b3ed721d1564
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 06:56:11 2022 +0900
+
+    update manage.csv
+
+commit f4895bf664acd941a9aeacc558ea51cabe12b9d6
+Merge: 55667f7 1c7ce67
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 06:54:20 2022 +0900
+
+    Merge branch 'main' of https://github.com/little-sister-pr2n/reinforcement
+
+commit 55667f7e2960b635fbcc443b1a25c3277c387868
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 06:54:18 2022 +0900
+
+    update test_for_pfrl
+
+commit 1c7ce67edbc4a21144b5c1b9ad44a5a29cc8246d
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 06:52:51 2022 +0900
+
+    some experiments done
+
+commit 24b2375a44aa157b22bf6d265f4ab0dd70b6523b
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sun Mar 20 04:28:09 2022 +0900
+
+    some experiments done
+
+commit 90185a1970b34ad841cc11559dc5b607462310a3
+Merge: f730bee 81d9a2c
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sat Mar 19 12:32:25 2022 +0900
+
+    a
+
+commit f730beea03d8be7f3f74323f17a4ff033ae8d900
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sat Mar 19 12:31:13 2022 +0900
+
+    fixed manage.csv
+
+commit 81d9a2c329814ba8abe8c22a11f483e975667380
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sat Mar 19 12:29:33 2022 +0900
+
+    HC TD3 Done
+
+commit d79c4a5d3c2f8b635ef6b068b34b90eaa8a34ee6
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sat Mar 19 01:59:19 2022 +0900
+
+    some experiments done
+
+commit 240682978112268f9770cb2c6e59cc659777667c
+Merge: 978bcc0 0b7984f
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 18:43:37 2022 +0900
+
+    Merge branch 'main' of https://github.com/little-sister-pr2n/reinforcement into main
+
+commit 978bcc0c133e9f0f139f2f200f5b1b045eb494f0
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 18:42:43 2022 +0900
+
+    PPO done
+
+commit 0b7984f710db6df17de9e44070ea196902bc8b64
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 18:40:16 2022 +0900
+
+    a
+
+commit 66e33b5cb548642a0d4e462d7b3a2c6616d5055d
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 18:12:19 2022 +0900
+
+    fixed
+
+commit 05206e2b59b8ae01cfa72035bf875201ac8ce3b2
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 18:05:56 2022 +0900
+
+    PPO done
+
+commit 81b605b9d5feb630f565fb177a9db64ba53fab9d
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 14:29:21 2022 +0900
+
+    a
+
+commit 5c812091fca5dd7efb9414c3ff695c1845789692
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 14:14:01 2022 +0900
+
+    experiments data
+
+commit ce52a07d6821eb4fe195a66cb8386ba45a0bf1db
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 11:24:25 2022 +0900
+
+    fixed ppo experiments
+
+commit e0e209719ff79aa62100296362618e53f524dbe8
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 11:21:40 2022 +0900
+
+    added PPO algorithm to experiments program
+
+commit 6d7a543f345b17e2edb22e38ce6dc1ea64f27079
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Fri Mar 18 11:12:49 2022 +0900
+
+    2 experiments has done with td3 agent
+
+commit 06cc05197b96f08312e69124d32f93cab9262c8a
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 20:48:15 2022 +0900
+
+    a
+
+commit e10cbfe78b2dc6c365fcbe6da1802ee93ad6a15e
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 20:44:26 2022 +0900
+
+    a
+
+commit fb6bc14f8b22d485c3ab7ae82f566a635b88356f
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 20:17:30 2022 +0900
+
+    test
+
+commit eef05a951c7b689c1b3a5a56481d1b261ee374af
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Wed Mar 16 17:46:10 2022 +0900
+
+    a
+
+commit 957857a8fa5697bb89078878734487bdf4625bef
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Sat Mar 12 12:22:43 2022 +0900
+
+    TD3
+    
+    td3の数値実験を行ったが，Antなどmujocoの環境を使えないことに気づいて途方に暮れている
+
+commit 605e3b4c67ac5ed7b171d29d55c2e6874540a29c
+Author: little-sister-pr2n <rinzemuko@gmail.com>
+Date:   Tue Mar 8 08:29:00 2022 +0900
+
+    a
+    
+    新規追加
