@@ -1,0 +1,131 @@
+diff --git a/manage.csv b/manage.csv
+index 2b6f01c..9a2aba3 100644
+--- a/manage.csv
++++ b/manage.csv
+@@ -24,3 +24,4 @@ Ant-v2,TD3,0,1000000
+ Ant-v2,TD3,1,1000000
+ Ant-v2,TD3,2,1000000
+ Ant-v2,TD3,3,1000000
++Ant-v2,SAC,3,1000000
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy.pt
+index 4686570..7f5f40c 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy_optimizer.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy_optimizer.pt
+index 0221477..ecb7836 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy_optimizer.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/policy_optimizer.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1.pt
+index 8f3a334..27b1fc8 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1_optimizer.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1_optimizer.pt
+index ad6daeb..e7d2367 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1_optimizer.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func1_optimizer.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2.pt
+index 882ff15..2fd2862 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2_optimizer.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2_optimizer.pt
+index 0cba0d6..f112918 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2_optimizer.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/q_func2_optimizer.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func1.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func1.pt
+index 58c32f3..e1272fb 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func1.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func1.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func2.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func2.pt
+index a160d61..315d572 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func2.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/target_q_func2.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_holder.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_holder.pt
+index e1bde66..f5965ff 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_holder.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_holder.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_optimizer.pt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_optimizer.pt
+index d531394..2ceb368 100644
+Binary files a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_optimizer.pt and b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/best/temperature_optimizer.pt differ
+diff --git a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/scores.txt b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/scores.txt
+index 5b07224..b7aa483 100644
+--- a/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/scores.txt
++++ b/results/Ant-v2/SAC/003/10eaacb62acf7cca7434a933e8c878fc8e513e49-9ebbcea1-92b4a41b/scores.txt
+@@ -15,3 +15,7 @@ steps	episodes	elapsed	mean	median	stdev	max	min	average_q1	average_q2	average_q
+ 700964	886	26401.686775445938	5147.41124037238	5729.382170304461	1515.9203740256478	6080.962981587077	60.338300371888046	379.08652	379.33057	13.370543270111083	13.811086721420288	698465	-7.849012	0.05578931048512459
+ 750633	937	28312.094534873962	5523.425546752592	5716.573856455605	880.0665460910342	6006.6443988478895	11.986045531346186	394.67502	395.0601	11.75437241077423	12.131497993469239	748134	-7.9020257	0.05639536306262016
+ 800745	988	30204.132984638214	5827.60572565509	5876.070118606196	327.6787761693221	6135.576752977416	3561.594625576309	404.66232	404.7258	12.271978912353516	12.309408354759217	798246	-7.997644	0.05614908039569855
++850552	1039	32184.664549589157	5944.556110794311	5968.016876239737	179.06279362284513	6195.135185269744	4627.521000242291	413.93512	413.7475	12.993279638290405	13.229029412269592	848053	-8.009045	0.05580199882388115
++900690	1090	34052.65869426727	5923.881833400232	6062.724549691723	779.5945257924144	6320.884373173358	315.96202398171226	425.65936	425.40582	12.148463654518128	12.479053130149842	898191	-7.7385645	0.05675913393497467
++950690	1140	36042.07890081406	6052.318514491946	6063.19695572518	130.92948068444346	6341.822542555856	5713.326304277346	424.23636	424.38678	12.316449298858643	13.952605805397035	948191	-7.832039	0.05684014409780502
++1000000	1192	37973.22560310364	5945.104582917041	6112.8106771031635	789.691369173282	6392.959148704461	683.5504949962071	441.98383	441.86258	11.440599808692932	11.249818744659423	997501	-7.9895177	0.05699283257126808
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy.pt
+index 64b715a..eae2692 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy_optimizer.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy_optimizer.pt
+index 12c14d8..828607a 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy_optimizer.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/policy_optimizer.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1.pt
+index c61c5d4..991fd8c 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1_optimizer.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1_optimizer.pt
+index 92a4a74..a8d3810 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1_optimizer.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func1_optimizer.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2.pt
+index ca96757..d1a1c1f 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2_optimizer.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2_optimizer.pt
+index 8f7d714..f5ba9f7 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2_optimizer.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/q_func2_optimizer.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_policy.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_policy.pt
+index 07afb28..34ed2f6 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_policy.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_policy.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func1.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func1.pt
+index 5873d7e..e181be8 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func1.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func1.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func2.pt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func2.pt
+index e3e4e0f..77dca67 100644
+Binary files a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func2.pt and b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/best/target_q_func2.pt differ
+diff --git a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/scores.txt b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/scores.txt
+index 2e947b4..4e48ee8 100644
+--- a/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/scores.txt
++++ b/results/Ant-v2/TD3/004/4dd5fa406ea29f02eceae284884f02968fe1bc60-dcbba7d4-e026f7b6/scores.txt
+@@ -6,3 +6,6 @@ steps	episodes	elapsed	mean	median	stdev	max	min	average_q1	average_q2	average_q
+ 250760	322	8263.12613940239	2557.5289058996495	2647.9504887901967	396.6381654699709	2785.2400947248543	714.0844871660821	135.49301	135.47638	5.362455451488495	5.040384554862976	-136.54502426147462	124130	248261
+ 300204	380	9864.448460817337	2615.574114103648	2850.0019757245636	660.6277968067282	3051.817224055419	-59.53230442269103	145.91757	146.02707	6.363742835521698	6.611976618766785	-147.23669906616212	148852	297705
+ 350544	439	11531.824588537216	2856.4892172612736	3016.2526165306544	768.1289109903994	3117.975813440608	-2176.1523416230634	154.95378	155.00198	6.56921537399292	6.208743357658387	-158.01827072143556	174022	348045
++400107	494	13198.708735466003	2943.8866255699563	3018.4375030947303	404.09955367931514	3164.7061102639564	160.78768979964826	161.78777	161.59601	7.021126184463501	8.123012475967407	-165.85239532470703	198804	397608
++450930	549	14871.117567062378	3040.690201992486	3164.359937479878	579.7554777900067	3333.8825247922387	-329.19193818681157	167.76413	167.70554	10.436041231155395	10.043978066444398	-170.37180465698242	224215	448431
++500800	606	16591.865507125854	2880.227831625414	3078.3391332405	578.3411092590911	3233.5349316159272	-264.98027838112966	172.52946	172.35736	9.780931091308593	10.113747038841247	-175.73070587158202	249150	498301
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy.pt
+index d7d1c7b..006384d 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy_optimizer.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy_optimizer.pt
+index 2ec09ae..51852d1 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy_optimizer.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/policy_optimizer.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1.pt
+index 1554cc3..66869af 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1_optimizer.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1_optimizer.pt
+index f32f453..52a7962 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1_optimizer.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func1_optimizer.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2.pt
+index 3de1e7e..6339067 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2_optimizer.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2_optimizer.pt
+index cdbe31c..35ec8ad 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2_optimizer.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/q_func2_optimizer.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func1.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func1.pt
+index 19b7bbe..8da40c5 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func1.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func1.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func2.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func2.pt
+index c1da755..24b273d 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func2.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/target_q_func2.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_holder.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_holder.pt
+index b8257f4..b22ea25 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_holder.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_holder.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_optimizer.pt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_optimizer.pt
+index 878d88f..93ccacb 100644
+Binary files a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_optimizer.pt and b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/best/temperature_optimizer.pt differ
+diff --git a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/scores.txt b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/scores.txt
+index cfdbd8b..d697cfa 100644
+--- a/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/scores.txt
++++ b/results/HalfCheetah-v2/SAC/003/4dd5fa406ea29f02eceae284884f02968fe1bc60-77dc5f43-0109324b/scores.txt
+@@ -5,3 +5,7 @@ steps	episodes	elapsed	mean	median	stdev	max	min	average_q1	average_q2	average_q
+ 200000	200	7070.794874429703	7261.68741552852	7267.448417946727	82.12022036401294	7447.812490652538	7083.9736260417185	417.94263	417.9187	4.766412010192871	4.588397552967072	197501	-6.0790644	0.18686887621879578
+ 250000	250	8893.556150197983	7705.676064897769	7705.623501430198	70.9236808264083	7859.076069619803	7552.275947894971	458.71777	458.94003	5.035893280506134	4.848925311565399	247501	-5.8378477	0.20073242485523224
+ 300000	300	10730.928422927856	8317.254926378595	8361.408731669067	390.81592301825964	8617.243210017903	4623.83862403929	505.37024	505.38712	5.274939529895782	5.19968355178833	297501	-5.730286	0.20752020180225372
++350000	350	12512.898384571075	8347.74829692762	8360.721618506064	89.72566442808335	8576.483701043757	8138.484135415635	557.9951	557.9017	7.3838889694213865	7.387611193656921	347501	-6.2838635	0.21222825348377228
++400000	400	14356.96484875679	9216.077250418872	9231.687778070445	117.45106410949988	9513.484134093975	8957.842081117784	601.2221	601.1199	8.419971714019775	8.519901113510132	397501	-5.8927665	0.21186089515686035
++450000	450	16174.816725254059	9529.879339966212	9537.800383291884	110.92752351019159	9770.30464026673	9205.706614890103	637.4653	637.5681	7.789541521072388	7.852417149543762	447501	-5.909137	0.21873702108860016
++500000	500	17917.743468761444	9750.272392710907	9770.532691133	157.82606829226847	10107.484410179572	9198.343811390365	676.57336	676.5601	8.747439098358154	9.161379022598267	497501	-6.3796825	0.22985820472240448
