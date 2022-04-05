@@ -5,6 +5,7 @@ import torch.nn.functional as F
 
 LOG_SIG_MAX = 2
 LOG_SIG_MIN = -20
+EVALUATE = 100
 epsilon = 1e-6
 
 class GaussianPolicy(nn.Module):
@@ -140,20 +141,42 @@ class SAC:
 
         return self.alpha
 
+    def evaluate(self, env_name, seed):
+        env = gym.make(env_name)
+        seed_eval = seed + 100
+        ret_list = list()
+        torch.manual_seed(seed_eval)
+        np.random.seed(seed_eval)
+        for t in range(EVALUATE):
+            state = env.reset()
+            done = False
+            ret_list.append(0)
+            while not done:
+                action = self.select_action(state, True) 
+                next_state , reward , done, _ = env.step(action)
+                ret_list[t] += float(reward)
+                state = next_state
+        env.close()
+        return ret_list 
+
 def main():
     import gym 
+    import numpy as np
     from utils import ReplayBuffer
     seed = 0
     max_steps = 1e6
     start_steps = 1e3
     batch_size = 256
     learning_rate = 3e-4
-    env = gym.make("Ant-v2")
+    eval_interval = 1e4
+    env_name = "Ant-v2"
+    env = gym.make(env_name)
 
     torch.manual_seed(seed)
     env.seed(seed)
     env.action_space.seed(seed)
-    
+    np.random.seed(seed)
+
     policy = GaussianPolicy(
         env.observation_space.shape[0], 
         env.action_space.shape[0],
@@ -196,6 +219,10 @@ def main():
             state = env.reset()
         else:
             state = next_state
+        
+        if (step + 1) % eval_interval:
+            result = agent.evaluate(env_name, seed)
+            print(f"{step+1}steps: {np.mean(result)}({np.std(result)})")
 
         
 
