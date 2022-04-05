@@ -177,7 +177,7 @@ def main():
         int(max_steps)
     )
     state = env.reset()
-    for step in range(max_steps):
+    for step in range(int(max_steps)):
         if step < start_steps:
             action = env.action_space.sample()
         else:
