@@ -44,7 +44,7 @@ class GaussianPolicy(nn.Module):
         return action, log_prob, mean
 
 class DoubleQNetwork(nn.Module):
-    def __init__(self, state_dim, action_dim, hidden_dim) -> None:
+    def __init__(self, state_dim, action_dim, hidden_dim=256) -> None:
         super(DoubleQNetwork, self).__init__()
         
         self.q1_input_layer = nn.Linear(state_dim + action_dim, hidden_dim)
