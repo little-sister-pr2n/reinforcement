@@ -112,8 +112,9 @@ class SAC:
         q_loss.backward()
         self.qfunc_optimizer.step()
 
+        pi, log_pi, _ = self.policy.sample(state)
+
         if step % self.delay == 0:
-            pi, log_pi, _ = self.policy.sample(state)
 
             q1_pi, q2_pi = self.qfunc(state, pi)
             q_pi = torch.min(q1_pi, q2_pi)
