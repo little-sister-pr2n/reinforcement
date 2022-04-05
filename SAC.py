@@ -224,9 +224,9 @@ def main():
         else:
             state = next_state
         
-        if (step + 1) % eval_interval:
+        if (step + 1) % eval_interval == 0:
             result = agent.evaluate(env_name, seed)
-            print(f"**evaluation**{step+1}steps: {np.mean(result)}({np.std(result)})")
+            print(f"(eval){step+1}steps: {np.mean(result)}({np.std(result)})")
 
         
 
