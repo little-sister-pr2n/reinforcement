@@ -165,11 +165,11 @@ class SAC:
 def main():
     
     seed = 0
-    max_steps = 1e6
-    start_steps = 1e3
-    batch_size = 256
+    max_steps = int(1e6)
+    start_steps = int(1e3)
+    batch_size = int(256)
     learning_rate = 3e-4
-    eval_interval = 1e4
+    eval_interval = int(1e4)
     env_name = "Ant-v2"
     env = gym.make(env_name)
 
