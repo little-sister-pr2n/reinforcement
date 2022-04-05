@@ -174,7 +174,7 @@ def main():
     replay_buffer = ReplayBuffer(
         env.observation_space.shape[0], 
         env.action_space.shape[0],
-        max_steps
+        int(max_steps)
     )
     state = env.reset()
     for step in range(max_steps):
