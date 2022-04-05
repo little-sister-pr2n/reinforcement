@@ -202,6 +202,7 @@ def main():
         int(max_steps)
     )
     state = env.reset()
+    temporary_result = 0
     for step in range(int(max_steps)):
         if step < start_steps:
             action = env.action_space.sample()
@@ -212,18 +213,20 @@ def main():
         replay_buffer.add(
             state, action, next_state, reward, done
         )
-
+        temporary_result += reward
         if step >= start_steps:
             agent.train(replay_buffer, batch_size, step)
 
         if done:
             state = env.reset()
+            print(f"{step+1}steps: {temporary_result}")
+            temporary_result = 0
         else:
             state = next_state
         
         if (step + 1) % eval_interval:
             result = agent.evaluate(env_name, seed)
-            print(f"{step+1}steps: {np.mean(result)}({np.std(result)})")
+            print(f"**evaluation**{step+1}steps: {np.mean(result)}({np.std(result)})")
 
         
 
