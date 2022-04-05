@@ -1,4 +1,7 @@
 import copy
+import gym 
+import numpy as np
+from utils import ReplayBuffer
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -160,9 +163,7 @@ class SAC:
         return ret_list 
 
 def main():
-    import gym 
-    import numpy as np
-    from utils import ReplayBuffer
+    
     seed = 0
     max_steps = 1e6
     start_steps = 1e3
