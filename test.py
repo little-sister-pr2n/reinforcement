@@ -1,5 +1,8 @@
 import argparse
+from time import sleep
 parser = argparse.ArgumentParser()
-parser.add_argument("--testing", default="pr1n")
+parser.add_argument("--time", default=1, type=int)
 args = parser.parse_args()
-print(args.testing)
+for t in range(args.time):
+    sleep(t)
+    print(t)
